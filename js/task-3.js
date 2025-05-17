@@ -1,9 +1,9 @@
 function filterArray(numbers, value) {
-  const index = numbers.indexOf(value);
-  if (index !== -1) return numbers.slice(index + 1);
   const array = [];
   for (let num of numbers) {
-    if (num > value) array.push(num);
+    if (num > value) {
+      array.push(num);
+    }
   }
   return array;
 }
